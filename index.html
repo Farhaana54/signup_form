@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+<body>
+    <p class="popup">Form Submitted Succesfully</p>
+    <div class="form_container">
+        <h1 id="heading">Registration Form</h1>
+        <div class="form_contents">
+            <form action="">
+                <div class="username">
+                    <input type="text" id="username" class="input-field" placeholder="Name">
+                    <i class="fa-solid fa-circle-check" style="color: #6be9fb;"></i>
+                    <label for="username">Please enter your Name</label>
+                </div>
+                <div class="Phone">
+                    <input type="number" id="Phone" class="input-field" placeholder="Phone" length="10" oninput="validatePhone()">
+                    <i class="fa-solid fa-circle-check" style="color: #6be9fb;"></i>
+                    <label for="Phone">Please Enter Your Moblie Number</label>
+                </div>
+
+                <div class="email">
+                    <input type="email" id="email" class="input-field" placeholder="Email">
+                    <i class="fa-solid fa-circle-check" style="color: #6be9fb;"></i>
+                    <label for="email">Please enter your emailID</label>
+                </div>
+
+                <div class="Password">
+                    <input type="text" id="Password" class="input-field" placeholder="Password" oninput="validatePasswords()">
+                    <i class="fa-solid fa-circle-check" style="color: #6be9fb;"></i>
+                    <label for="Password">Please enter your Password</label>
+                </div>
+
+                <div class="confirmPassword">
+                    <input type="text" id="confirmPassword" class="input-field" placeholder="Confirm Password" oninput="validatePasswords()">
+                    <i class="fa-solid fa-circle-check" style="color: #6be9fb;"></i>
+                    <label for="confirmPassword">Please enter your Password</label>
+                </div>
+                <div class="Submit">
+                    <button id="submitButton">Submit</button>
+                    <button id="clearButton">Clear</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
